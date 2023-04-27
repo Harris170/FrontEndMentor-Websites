@@ -1,18 +1,19 @@
 
 .toggle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     border: none;
-    gap: 13px;
     margin: 0;
+    color: var(--dark-mode-blue-text);
   }
   
   .toggle__wrapper {
     display: inline-block;
     height: 1.5rem;
     position: relative;
+    user-select: none;
   }
   
   .toggle__background {
@@ -55,6 +56,10 @@
     right: 4px;
     left: calc(100% - 21px);
     transition: 0.2s ease-out;
+  }
+
+  #light:checked ~ .toggle__background{
+    background: var(--toggle-light);
   }
   
   .toggle > label {
