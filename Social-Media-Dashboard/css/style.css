@@ -24,7 +24,7 @@
   );
   --toggle-light: hsl(230, 22%, 74%);
 
-  /* Dark Theme */
+  /* Dark Theme Colors */
   --dark-mode-bg: hsl(230, 17%, 14%);
   --dark-mode-bg-pattern: hsl(232, 19%, 15%);
   --dark-mode-card-bg: hsl(228, 28%, 20%);
@@ -32,13 +32,45 @@
   --dark-mode-blue-text: hsl(228, 34%, 66%);
   --dark-mode-white-text: hsl(0, 0%, 100%);
 
-  /* Light Theme */
+  /* Light Theme Colors */
   --light-mode-bg: hsl(0, 0%, 100%);
   --light-mode-pattern: hsl(225, 100%, 98%);
   --light-mode-card-bg: hsl(227, 47%, 96%);
+  --light-mode-card-hover-bg: hsl(232, 33%, 91%);
   --light-mode-gray-text: hsl(228, 12%, 44%);
   --light-mode-darkblue-text: hsl(230, 17%, 14%);
+
+
+  /* Default Theme: Dark */
+  --background: var(--dark-mode-bg);
+  --bg-pattern: var(--dark-mode-bg-pattern);
+  --card-bg: var(--dark-mode-card-bg);
+  --card-hover-bg: var(--dark-mode-card-hover-bg);
+  --text-color-light: var(--dark-mode-white-text);
+  --text-color-dark: var(--dark-mode-blue-text);
+
 }
+
+@media (prefers-color-scheme: light){
+    :root{
+        --background: var(--light-mode-bg);
+        --bg-pattern: var(--light-mode-bg-pattern);
+        --card-bg: var(--light-mode-card-bg);
+        --card-hover-bg: var(--light-mode-card-hover-bg);
+        --text-color-light: var(--light-mode-white-text);
+        --text-color-dark: var(--light-mode-blue-text);
+    }
+}
+
+body.light{
+    --background: var(--light-mode-bg);
+    --bg-pattern: var(--light-mode-bg-pattern);
+    --card-bg: var(--light-mode-card-bg);
+    --card-hover-bg: var(--light-mode-card-hover-bg);
+    --text-color-light: var(--light-mode-white-text);
+    --text-color-dark: var(--light-mode-blue-text);
+}
+
 
 html {
   box-sizing: border-box;
@@ -55,8 +87,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-body);
-  background-color: var(--dark-mode-bg);
-  color: var(--dark-mode-white-text);
+  background-color: var(--background);
+  color: var(--text-color-light);
 }
 
 h1,
@@ -91,7 +123,7 @@ header{
 .header__title__subheading{
     font-size: 16px;
     margin-top: 4px;
-    color: var(--dark-mode-blue-text);
+    color: var(--text-color-dark);
 }
 
 fieldset > label{
@@ -102,7 +134,7 @@ fieldset > label{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: var(--dark-mode-card-hover-bg);
+    background-color: var(--card-hover-bg);
     margin-bottom: 16px;
 }
 
@@ -110,15 +142,15 @@ fieldset > label{
     margin-top: 0px;
     height: 230px;
     border-radius: 0 30px;
-    background-color: var(--dark-mode-bg-pattern);
+    background-color: var(--bg-pattern);
   }
 
 /* --==================================================-- */
 /* Desktop Screens */
 @media (min-width: 50em) {
   body {
-    background: var(--dark-mode-bg);
-    color: var(--dark-mode-white-text);
+    background: var(--background);
+    color: var(--text-color-light);
   }
 
   header {
@@ -135,7 +167,7 @@ fieldset > label{
 
   .header__title__subheading {
     font-size: 16px;
-    color: var(--dark-mode-blue-text);
+    color: var(--text-color-dark);
   }
 
   .divider_line{

@@ -7,8 +7,8 @@
 }
 
 .card {
-  background: var(--dark-mode-card-bg);
-  color: var(--dark-mode-blue-text);
+  background: var(--card-bg);
+  color: var(--text-color-dark);
   text-align: center;
   padding: 24px;
   width: 326px;
@@ -19,7 +19,7 @@
 }
 
 .card:hover{
-  background: var(--dark-mode-card-hover-bg);
+  background: var(--card-hover-bg);
   transition: 0.2s ease;
 }
 
@@ -66,13 +66,13 @@
 }
 
 .card__count {
-  color: var(--dark-mode-white-text);
+  color: var(--text-color-light);
   font-size: 56px;
   margin-bottom: 25px;
 }
 
 .card__label {
-  color: var(--dark-mode-blue-text);
+  color: var(--text-color-dark);
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -87,7 +87,7 @@
 }
 
 .card__incr_decr {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .card__increase {
@@ -104,7 +104,8 @@
   font-size: 28px;
 }
 
-.card__small {
+.card__small:last-child{
+  margin-bottom: 36px;
 
 }
 
@@ -112,7 +113,7 @@
 }
 
 .card__count_small {
-  color: var(--dark-mode-white-text);
+  color: var(--text-color-light);
   font-size: 40px;
 }
 
@@ -143,15 +144,18 @@
     align-items: center;
   }
 
+  .card__username{
+    font-size: 14px;
+  }
+
   .heading__small_cards{
     margin-top: 36px;
     font-size: 32px;
   }
 
-  .card__small {
+  .card__small, .card__small:last-child {
     margin: 0;
   }
-
 }
 
 /* Desktop Screens */
@@ -165,12 +169,16 @@
   }
 
   .card {
-    background: var(--dark-mode-card-bg);
-    color: var(--dark-mode-blue-text);
+    background: var(--card-bg);
+    color: var(--text-color-dark);
     text-align: center;
     padding: 24px;
     width: 255px;
     border-radius: 5px;
+  }
+
+  .card__username{
+    font-size: 16px;
   }
 
   .heading__small_cards{
