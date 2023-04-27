@@ -8,10 +8,37 @@
     <title>Social Media Dashboard</title>
   </head>
   <body>
-    <h1>Hello Worlds</h1>
-    <box-icon name='face' type='solid' ></box-icon>
+    <div class="container">
+      <header>
+        
+        <div class="header__title">
+          <h1>Social Media Dashboard</h1>
+          <p class="header__title__subheading">Total Followers: 23,004</p>
+        </div>
 
-    <script src="/js/script.js"></script>
+        <!-- TODO: Toggle Button -->
+        <fieldset class="toggle" aria-label="theme toggle" role="radiogroup">
+          <label for="dark">Dark</label>
+          <div class="toggle__wrapper">
+            <input type="radio" name="theme" id="dark" checked>
+            <input type="radio" name="theme" id="light">
+            <span aria-hidden="true" class="toggle__background"></span>
+            <span aria-hidden="true" class="toggle__button"></span>
+          </div>
+          <label for="light">Light</label>
+        </fieldset>
+      
+      </header>
+
+      <main>
+        <section></section>
+        <section></section>
+        <section></section>
+      </main>
+
+      <footer></footer>
+    </div>
+    <script src="/js/scrip t.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
