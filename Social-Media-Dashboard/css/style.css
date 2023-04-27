@@ -1,178 +1,117 @@
-@import 'utils.css';
+@import "card.css";
+@import "toggle.css";
 
-:root{
-    --ff-body: monospace;
-    --fs-card-heading: 14px;
+:root {
+  --ff-body: monospace;
+  --fs-card-heading: 14px;
 
-    --lime-green: hsl(163, 72%, 41%);
-    --bright-red: hsl(356, 69%, 56%);
-    
-    --Facebook: hsl(208, 92%, 53%);
-    --Twitter: hsl(203, 89%, 53%);
-    --Instagram: linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%);
-    --YouTube: hsl(348, 97%, 39%);
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
 
-    --toggle-dark: linear-gradient(90deg, rgba(55, 143, 230,1) 0%, rgba(62, 218, 130,1) 100%);
-    --toggle-light: hsl(230, 22%, 74%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear-gradient(
+    90deg,
+    rgba(253, 196, 104, 1) 0%,
+    rgba(223, 73, 150, 1) 100%
+  );
+  --YouTube: hsl(348, 97%, 39%);
 
-    /* Dark Theme */
-    --dark-mode-bg: hsl(230, 17%, 14%);
-    --dark-mode-bg-pattern: hsl(232, 19%, 15%);
-    --dark-mode-card-bg: hsl(228, 28%, 20%);
-    --dark-mode-blue-text: hsl(228, 34%, 66%);
-    --dark-mode-white-text: hsl(0, 0%, 100%);
+  --toggle-dark: linear-gradient(
+    90deg,
+    rgba(55, 143, 230, 1) 0%,
+    rgba(62, 218, 130, 1) 100%
+  );
+  --toggle-light: hsl(230, 22%, 74%);
 
-    /* Light Theme */
-    --light-mode-bg: hsl(0, 0%, 100%);
-    --light-mode-pattern: hsl(225, 100%, 98%);
-    --light-mode-card-bg: hsl(227, 47%, 96%);
-    --light-mode-gray-text: hsl(228, 12%, 44%);
-    --light-mode-darkblue-text: hsl(230, 17%, 14%);
+  /* Dark Theme */
+  --dark-mode-bg: hsl(230, 17%, 14%);
+  --dark-mode-bg-pattern: hsl(232, 19%, 15%);
+  --dark-mode-card-bg: hsl(228, 28%, 20%);
+  --dark-mode-blue-text: hsl(228, 34%, 66%);
+  --dark-mode-white-text: hsl(0, 0%, 100%);
+
+  /* Light Theme */
+  --light-mode-bg: hsl(0, 0%, 100%);
+  --light-mode-pattern: hsl(225, 100%, 98%);
+  --light-mode-card-bg: hsl(227, 47%, 96%);
+  --light-mode-gray-text: hsl(228, 12%, 44%);
+  --light-mode-darkblue-text: hsl(230, 17%, 14%);
 }
 
-html{
-    box-sizing: border-box;
-    font-size: 100%;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-*, *::before, *::after{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-body{
-    margin:0;
-    padding: 0;
-    font-family: var(--ff-body);
-    background-color: var(--dark-mode-bg);
-    color: var(--dark-mode-white-text);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-body);
+  background-color: var(--dark-mode-bg);
+  color: var(--dark-mode-white-text);
 }
 
-h1,h2,h3{
-    margin: 0;
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
-a, a:visited, a:active{
-    text-decoration: hidden;
+a,
+a:visited,
+a:active {
+  text-decoration: hidden;
 }
 
 /* --==================================================-- */
 /* Mobile Screens */
-.container{
-    max-width: 69.375rem;
-    padding: 0 1.5625rem;
-    margin: 36px auto;
+.container {
+max-width: min-content;
+margin: 0 auto 46px;
 }
 
-.header__title{
-    width: auto;
+.header__title {
+  width: auto;
 }
-
 
 /* --==================================================-- */
 /* Desktop Screens */
-@media (min-width: 50em){
-    .container{
-        margin: 0 auto 2.929rem;
-        padding: 1rem 0 1rem 1rem;
-    }
+@media (min-width: 50em) {
+  body {
+    background: var(--dark-mode-bg);
+    color: var(--dark-mode-white-text);
+  }
 
-    body{
-        background: var(--dark-mode-bg);
-        color: var(--dark-mode-white-text);
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    margin: 2.25rem 0;
+  }
 
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        user-select: none;
-        margin: 2.25rem 0;
-    }
+  .header__title {
+  }
 
-    .header__title{
-    }
-    
-    .header__title__subheading{
-        font-size: 0.875rem;
-        color: var(--dark-mode-blue-text);
-    }
+  .header__title__subheading {
+    font-size: 0.875rem;
+    color: var(--dark-mode-blue-text);
+  }
 
-    .header__toggle{
-        margin-left: auto;
-    }
+  .header__toggle {
+    margin-left: auto;
+  }
 
-    .toggle{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border: none;
-        gap: 13px;
-        margin: 0;
-    }
-
-    .toggle__wrapper{
-        display: inline-block;
-        height: 1.5rem;
-        position: relative;
-    }
-
-    .toggle__background{
-        display: block;
-        background: var(--toggle-dark);
-        height: 100%;
-        border-radius: 12px;
-        overflow: hidden;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        pointer-events: none;
-    }
-
-    .toggle__button{
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background: var(--dark-mode-bg);
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        right: 100%;
-        transition: 0.2s ease-out;
-    }
-
-    .toggle input[type="radio"]{
-        opacity: 0;
-        z-index: 1;
-        height: 24px;
-        width: 24px;
-        margin: 0;
-    }
-
-    .toggle input[type="radio"]:focus ~.toggle__button{
-        border: 2px solid white;
-    }
-
-    #light:checked ~ .toggle__button{
-        right: 4px;
-        left: calc(100% - 21px);
-        transition: 0.2s ease-out;
-    }
-
-    .toggle > label{
-        color:var(--dark-mode-blue-text);
-    }
-
-    .toggle > label:hover{
-        color:var(--dark-mode-white-text);
-    }
-
-
-    main{
-        display: flex;
-        flex-direction: column;
-        gap: 46px;
-    }
-    
-
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
 }
