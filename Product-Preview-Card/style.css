@@ -22,7 +22,7 @@ html{
 
 .container{
   max-width: max-content;
-  margin-top: var(--size-12);
+  margin-top: var(--size-8);
   margin-bottom: var(--size-4);
 }
 
