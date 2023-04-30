@@ -145,6 +145,10 @@ fieldset > label{
     background-color: var(--bg-pattern);
   }
 
+  a{
+    color: white;
+  }
+
 /* --==================================================-- */
 /* Desktop Screens */
 @media (min-width: 50em) {
