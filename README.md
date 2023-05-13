@@ -16,4 +16,5 @@ Table of contents
 
 
 ## Advice Generator App
+This project is in "svelte" branch.
 ![image](/Advice-Generator/screenshot.png)
