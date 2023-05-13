@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "svelte": "^3.59.1"
+    "svelte-kit": "^1.2.0"
   }
 }
