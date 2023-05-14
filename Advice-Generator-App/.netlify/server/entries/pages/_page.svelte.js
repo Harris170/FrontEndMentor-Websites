@@ -10,9 +10,9 @@ const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
   return `<div class="svelte-h1e97a"><div class="card svelte-h1e97a"><span class="svelte-h1e97a">Advice #${escape(advice_number)}</span>
     <p class="svelte-h1e97a"><span class="marks svelte-h1e97a">&quot;</span>${escape(quote)}<span class="marks svelte-h1e97a">&quot;</span></p>
-    <img class="img-desktop svelte-h1e97a" src="/src/images/pattern-divider-desktop.svg" alt="pattern-divider">
-    <img class="img-mobile svelte-h1e97a" src="/src/images/pattern-divider-mobile.svg" alt="pattern-divider"></div>
-  <button class="dice-btn svelte-h1e97a"><img src="/src/images/icon-dice.svg" alt="dice-icon" class="svelte-h1e97a"></button>
+    <img class="img-desktop svelte-h1e97a" src="/pattern-divider-desktop.svg" alt="pattern-divider">
+    <img class="img-mobile svelte-h1e97a" src="/pattern-divider-mobile.svg" alt="pattern-divider"></div>
+  <button class="dice-btn svelte-h1e97a"><img src="/icon-dice.svg" alt="dice-icon" class="svelte-h1e97a"></button>
 </div>`;
 });
 const _page_svelte_svelte_type_style_lang = "";
