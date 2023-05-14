@@ -17,6 +17,6 @@ Table of contents
 
 ## Advice Generator App
 This is in another repository
-![link](https://github.com/Harris170/FrontEndMentor-Svelte)
-![image](![image](https://github.com/Harris170/FrontEndMentor-Websites/assets/104685376/e13ba41f-a9e5-4845-a68e-cab83d0b83cf)
+[link](https://github.com/Harris170/FrontEndMentor-Svelte)
+![image](https://github.com/Harris170/FrontEndMentor-Websites/assets/104685376/e13ba41f-a9e5-4845-a68e-cab83d0b83cf)
 )
