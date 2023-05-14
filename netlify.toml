@@ -1,4 +1,4 @@
 [build]
-    base = "/index.html"
+    base = "/Advice-Generator"
     command = "npm run build"
     publish = "build"
