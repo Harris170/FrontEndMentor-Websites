@@ -107,7 +107,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link\n      rel="icon"\n      type="image/png"\n      sizes="32x32"\n      href="/favicon-32x32.png"\n    />\n    <meta name="viewport" content="width=device-width" />\n    <title>Frontend Mentor | Advice generator app</title>\n    ' + head + '\n  </head>\n  <body data-sveltekit-preload-data="hover">\n    <a href="/index.html" alt="All Projects" id="all-projects"><- All Projects</a>\n    <div style="display: contents">' + body + '</div>\n    <div class="attribution">\n      Challenge by\n      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"\n        >Frontend Mentor</a\n      >. Coded by\n      <a href="https://www.frontendmentor.io/profile/Harris170" target="_blank" rel="noopener"\n        >Harris N</a\n      >.\n    </div>\n  </body>\n</html>\n\n<style>\n  body {\n    background-color: hsl(220, 22%, 16%);\n  }\n\n  .attribution {\n    font-size: 11px;\n    text-align: center;\n    color: hsl(193, 38%, 86%);\n  }\n\n  .attribution a, a {\n    justify-content: center;\n    text-decoration: none;\n    color: hsl(150, 100%, 66%);\n  }\n  \n  #all-projects{\n    display: flex;\n    justify-content: center;\n    align-self: center;\n  }\n</style>\n',
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link\n      rel="icon"\n      type="image/png"\n      sizes="32x32"\n      href="/favicon-32x32.png"\n    />\n    <meta name="viewport" content="width=device-width" />\n    <title>Frontend Mentor | Advice generator app</title>\n    ' + head + '\n  </head>\n  <body data-sveltekit-preload-data="hover">\n    <a href="https://epic-frontendmentor-projects.netlify.app/index.html" alt="All Projects" id="all-projects"><- All Projects</a>\n    <div style="display: contents">' + body + '</div>\n    <div class="attribution">\n      Challenge by\n      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"\n        >Frontend Mentor</a\n      >. Coded by\n      <a href="https://www.frontendmentor.io/profile/Harris170" target="_blank" rel="noopener"\n        >Harris N</a\n      >.\n    </div>\n  </body>\n</html>\n\n<style>\n  body {\n    background-color: hsl(220, 22%, 16%);\n  }\n\n  .attribution {\n    font-size: 11px;\n    text-align: center;\n    color: hsl(193, 38%, 86%);\n  }\n\n  .attribution a, a {\n    justify-content: center;\n    text-decoration: none;\n    color: hsl(150, 100%, 66%);\n  }\n  \n  #all-projects{\n    display: flex;\n    justify-content: center;\n    align-self: center;\n  }\n</style>\n',
     error: ({ status, message }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<title>' + message + `</title>\r
 \r
 		<style>\r
@@ -168,7 +168,7 @@ const options = {
 		<div class="error">\r
 			<span class="status">` + status + '</span>\r\n			<div class="message">\r\n				<h1>' + message + "</h1>\r\n			</div>\r\n		</div>\r\n	</body>\r\n</html>\r\n"
   },
-  version_hash: "r9rks3"
+  version_hash: "1ktgjd"
 };
 function get_hooks() {
   return {};
