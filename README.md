@@ -16,4 +16,4 @@ Table of contents
 
 
 ## Advice Generator App
-![image](/Advice-Generator/screenshot.png)
+![image](/Advice-Generator-App/screenshot.png)
